@@ -14,7 +14,8 @@ COPY src ./src
 # Copy the gradle wrapper
 COPY gradlew ./
 COPY gradle ./gradle
-
+# Change permission
+RUN chmod +x gradlew
 # Build the project
 RUN ./gradlew build
 
