@@ -19,7 +19,7 @@ COPY gradle ./gradle
 RUN ./gradlew build
 
 # Start a new stage for the runtime image
-FROM openjdk:17-jre-alpine
+FROM openjdk:17-jdk-alpine
 
 # Set the working directory
 WORKDIR /app
